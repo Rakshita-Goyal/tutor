@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: grey;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-icons li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-icons li a:hover {
+    color: #f04e30; /* Optional: Change color on hover */
+}
+.navbar-links li a:hover {
+    color: #f04e30; /* Optional: Change color on hover */
+}
+
+.hero {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PdreRIIE_1XZDaCPfSNYmKuTsH2O4l7Z8g&s') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay with increased opacity */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2; /* Ensure the text is above the overlay */
+    position: relative;
+}
+
+.hero-content h2 {
+    font-size: 40px; /* Increase the font size */
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Bolder text shadow */
+    font-weight: bold; /* Make the text bolder */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-content p {
+    font-size: 24px; /* Increase the font size */
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Bolder text shadow */
+    font-weight: bold; /* Make the text bolder */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 2.5cm; /* Move the button 1.5 cm down */
+}
+
+.btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+
+.services, .about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: grey;
+}
+.about{
+    background: #000;
+}
+.services h2, .about h2, .contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.service-card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.form-feedback {
+    margin-top: 20px;
+    color: #4CAF50;
+    font-size: 18px;
+}
